@@ -10,7 +10,7 @@ import {
 import type { NextRequest } from "next/server";
 
 const { auth } = NextAuth(authConfig);
-// something new
+// something new here
 export default auth((req) => {
   const { nextUrl } = req;
   const isLoggedIn = !!req.auth;
